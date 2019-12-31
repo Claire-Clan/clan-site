@@ -42,4 +42,3 @@ def dashboard():
     # Incomplete pending dashboard features
     return None
 
-@app.route("/

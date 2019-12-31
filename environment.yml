@@ -1,0 +1,14 @@
+name: claire-clan
+
+dependencies:
+  - python=3.7
+  - pip
+  - flask
+  - gunicorn
+  - flask-login
+  - flask-sqlalchemy
+  - flask-wtf
+  - wtforms
+  - numpy
+  - pip:
+      - flask-bcrypt

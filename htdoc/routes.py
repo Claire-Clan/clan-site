@@ -1,6 +1,8 @@
-from htdoc import app
+from htdoc import app, db, bcrypt
 from flask import render_template, url_for, redirect
-
+from htdoc.models import User
+from htdoc.forms import LoginForm
+from flask_login import login_user, current_user, logout_user, login_required
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -36,3 +38,8 @@ def logout():
 
 @app.route("/dashboard", methods=["GET", "POST"])
 @login_required
+def dashboard():
+    # Incomplete pending dashboard features
+    return None
+
+@app.route("/

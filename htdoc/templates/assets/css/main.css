@@ -1754,12 +1754,12 @@ input, select, textarea {
 
 		header.special h2 {
 			margin-bottom: 0;
-			color: rgb(207, 157, 62);
+			color: dodgerblue;
 			font-weight: bold;
 		}
 
 		header.special p {
-			color: orange;
+			color: rgb(19, 91, 163);
 			font-weight: bold;
 		}
 
@@ -1866,6 +1866,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
+			border-radius: 17px;
 		}
 
 		.image.fit {
@@ -1885,6 +1886,7 @@ input, select, textarea {
 			.image.featured img {
 				display: block;
 				width: 100%;
+				border-radius: 17px;
 			}
 
 /* Icon */
@@ -2219,11 +2221,12 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
+			background-color: black;
+			background-image: url("../../images/airmanandkris.jpg");
+			background-position: right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
+			border-radius: 17px;
 			color: #fff;
 		}
 

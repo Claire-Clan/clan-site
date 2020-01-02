@@ -4,23 +4,23 @@
 		<title>Brace For Impact</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{{url_for('static', filename='assets/css/main.css')}}" />
+		<noscript><link rel="stylesheet" href="{{url_for('static', filename='assets/css/noscript.css')}}" /></noscript>
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">Put Our Logo Here</span></a></h1>
+					<h1 id="logo"><a href="{{url_for('home')}}">Put Our Logo Here</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Hi</a></li>
+							<li class="current"><a href="{{url_for('home')}}">Hi</a></li>
 							<li class="submenu">
 								<a href="#">See What We Do</a>
 								<ul>
-									<li><a href="left-sidebar.html">Home</a></li>
-									<li><a href="right-sidebar.html">Blogs</a>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Blogs</a>
 											<ul>
 												<li><a href="#">Kristian</a></li>
 												<li><a href="#">Rebecca</a></li>
@@ -33,8 +33,8 @@
 												<li><a href="#">Fennec</a></li>
 											</ul>
 									</li>
-									<li><a href="no-sidebar.html">Adventures</a></li>
-									<li><a href="contact.html">About Us</a></li>
+									<li><a href="#">Adventures</a></li>
+									<li><a href="#">About Us</a></li>
 									
 								</ul>
 							</li>
@@ -117,7 +117,7 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/krisandparkerchefs.jpg" alt="The Mighty Kris" /></a>
+										<a href="#" class="image featured"><img src="{{url_for('static', filename='images/krisandparkerchefs.jpg')}}" alt="The Mighty Kris" /></a>
 										<header>
 											<h3>Many Caps Kristian</h3>
 										</header>
@@ -128,7 +128,7 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/rebeccaandsleepingparker.jpg" alt="Rebecca" /></a>
+										<a href="#" class="image featured"><img src="{{url_for('static', filename='images/rebeccaandsleepingparker.jpg')}}" alt="Rebecca" /></a>
 										<header>
 											<h3>Rebecca The Resourceful</h3>
 										</header>
@@ -141,7 +141,7 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/brandonatbeach.jpg" alt="Brandon" /></a>
+										<a href="#" class="image featured"><img src="{{url_for('static', filename='images/brandonatbeach.jpg')}}" alt="Brandon" /></a>
 										<header>
 											<h3>Backbone Brandon</h3>
 										</header>
@@ -152,7 +152,7 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/parkerwalkingatthepark.jpg" alt="Parker" /></a>
+										<a href="#" class="image featured"><img src="{{url_for('static', filename='images/parkerwalkingatthepark.jpg')}}" alt="Parker" /></a>
 										<header>
 											<h3>Playful Parker</h3>
 										</header>
@@ -164,7 +164,7 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/jackinwater.jpg" alt="Jack" /></a>
+										<a href="#" class="image featured"><img src="{{url_for('static', filename='images/jackinwater.jpg')}}" alt="Jack" /></a>
 										<header>
 											<h3>Jumping Jack</h3>
 										</header>
@@ -176,7 +176,7 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/walkingthedogs.jpg" alt="Dogs" /></a>
+										<a href="#" class="image featured"><img src="{{url_for('static', filename='images/walkingthedogs.jpg')}}" alt="Dogs" /></a>
 										<header>
 											<h3>Power Puppies</h3>
 										</header>
@@ -210,14 +210,14 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="{{url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/util.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
 
 	</body>
 </html>

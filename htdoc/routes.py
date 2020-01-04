@@ -34,11 +34,28 @@ def logout():
         flash(f"Logged out.")
         return redirect(url_for("home"))
     else:
+        # Because I'm not going to handle these...
         flask.abort(403)
 
 @app.route("/dashboard", methods=["GET", "POST"])
 @login_required
 def dashboard():
-    # Incomplete pending dashboard features
-    return None
+    form = DashForm()
+    if dash_form.validate_on_submit():
+        filter_name = User.query.filter_by(name=form.name.data).first()
+        return redirect(url_for('dashboard')
+    if request.method = "POST":
+    return render_template("dashboard.html", title='Dashboard', form=form)
 
+@app.route("/blog", methods=["GET", "POST"])
+@login_required
+def blog_main():
+    # pending feature implementation
+    return render_template("blog.html")
+
+@app.route("/blog/<name>", methods=["GET", "POST"])
+def p_blog(name):
+    user = User.query.get_or_404(name)
+    posts = Post.query.filter_by(user_id=user.id).all()
+    lazy_name = str(name)
+    return render_template(f"{lazy_name}.html")

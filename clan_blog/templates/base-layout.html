@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+
+		<!-- Link to CSS / Stylesheets -->
+
+		<!-- Managed on routes -->
+		{% if title %}
+			<title>Claires - {{title}}</title>
+		{% else %}
+			<title>Claires</title>
+		{% endif %}
+	</head>
+
+	<body>
+		<!-- Header -->
+
+		<!-- Main content -->
+		{% block content %}
+		{% endblock content %}
+
+		<!-- End -->
+
+
+	</body>
+</html>

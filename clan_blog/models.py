@@ -1,5 +1,6 @@
 """ DB Schema """
 from . import db
+from datetime import datetime
 
 
 class User(db.Model):
@@ -18,4 +19,27 @@ class User(db.Model):
                       unique=True,
                       nullable=False)
 
-    # Add the rest of the model
+    admin = db.Column(db.Boolean,
+                      nullable=False)
+
+class Posts(db.Model):
+    """ Model for posts by users """
+
+    id = db.Column(db.Integer,
+                   primary_key=True)
+
+    post = db.Column(db.Text,
+                     nullable=False,
+                     unique=False,
+                     index=False)
+
+    date_created = db.Column(db.DateTime,
+                             nullable=False,
+                             default=datetime.utcnow)
+
+    user_id = db.Column(db.Integer,
+                        db.ForeignKey('user.id'),
+                        nullable=False)
+
+    user = db.relationship('User',
+                           backref='author', lazy=True)
